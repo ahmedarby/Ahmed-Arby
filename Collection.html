@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Hunt | My Palettes Collection</title>
+    <link href="./res/Logo.svg" rel="shortcut icon" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./css/style.base.css" rel="stylesheet">
+    <link href="./css/style.links.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="Home.html">
+            <img alt="Color Hunt Logo" src="./res/Logo.svg">
+            <h1>Color Hunt</h1>
+        </a>
+
+        <div id="page-name">
+            Palettes
+            <svg viewBox="0 0 5.57721 9.73132" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_2">
+                    <g id="Home">
+                        <g class="cls-1">
+                            <path
+                                d="M.22075,1.28133l4.07505,4.075A.75043.75043,0,0,0,5.35646,4.29571l-4.075-4.075A.75043.75043,0,0,0,.22075,1.28133Z" />
+                            <path
+                                d="M4.2958,4.37486l-4.075,4.075A.75043.75043,0,0,0,1.28141,9.51057l4.07505-4.075A.75043.75043,0,0,0,4.2958,4.37486Z" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div id="sections">
+            <h1>Links</h1>
+            <ul class="not-active">
+                <li>New</li>
+                <li>Trendy</li>
+                <li>Poplar</li>
+                <li>Random</li>
+            </ul>
+        </div>
+
+        <div id="more">
+            <svg viewBox="0 0 28.57703 7.14426" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <circle class="cls-2" cx="14.28852" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="3.57213" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="25.0049" cy="3.57213" r="3.57213" />
+                </g>
+            </svg>
+            <div class="more-options">
+                <ul class="not-active">
+                    <li><a href="Home.html">Palettes</a></li>
+                    <li><a href="Create.html">Create</a></li>
+                    <li><a href="Collection.html" style="color: #a5a5a5;">Links</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>My Palettes Collection</h1>
+        <p>You Liked 0 Palettes</p>
+        <div class="my-likes"></div>
+    </main>
+
+    <script>
+        document.querySelector('nav #more svg').addEventListener('click', () => {
+            document.querySelector('nav #more .more-options ul').classList.toggle('not-active');
+        });
+    </script>
+
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/links.js"></script>
+
+</body>
+
+</html>

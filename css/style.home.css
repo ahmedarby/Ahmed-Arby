@@ -1,0 +1,140 @@
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 350px 0 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .item {
+    display: inline-block;
+    width: 250px;
+    height: 280px;
+    background: #fff;
+    animation: fade 0.3s ease;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 1px 10px rgba(18, 42, 95, 0.1);
+}
+
+main .item .color {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #a5a5a5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+main .item .color span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 41%;
+}
+
+main .item .color span:nth-of-type(2) {
+    height: 26%;
+}
+
+main .item .color span:nth-of-type(3) {
+    height: 18%;
+}
+
+main .item .color span:nth-of-type(4) {
+    height: 15%;
+}
+
+main .item .color span h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    background: #00000030;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 0 3px;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+main .item .color span:hover h1 {
+    opacity: 1;
+}
+
+main .item .color span a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+main .item .bottom {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+main .item .bottom .like {
+    display: flex;
+    width: max-content;
+    height: 30px;
+    border: 1px solid #e8ecef;
+    color: #525a60;
+    font-size: 15px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+main .item .bottom .like:hover {
+    background: #9bc4f040;
+}
+
+main .item .bottom .like svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+main .item .bottom .time {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+main .item .bottom .time h1 {
+    color: #9b9b9b;
+    font-size: 13px;
+}
+
+.active-like {
+    background: #9bc4f040 !important;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 950px) {
+    aside {
+        display: none;
+    }
+    main {
+        padding: 100px 30px 30px 30px;
+    }
+}

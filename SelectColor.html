@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Hunt</title>
+    <link href="./res/Logo.svg" rel="shortcut icon" type="image/png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./css/style.base.css" rel="stylesheet">
+    <link href="./css/style.select.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+        <a href="Home.html">
+            <img alt="Color Hunt Logo" src="./res/Logo.svg">
+            <h1>Color Hunt</h1>
+        </a>
+    
+        <div id="page-name">
+            Palettes
+            <svg viewBox="0 0 5.57721 9.73132" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_2"><g id="Home"><g class="cls-1"><path d="M.22075,1.28133l4.07505,4.075A.75043.75043,0,0,0,5.35646,4.29571l-4.075-4.075A.75043.75043,0,0,0,.22075,1.28133Z"/><path d="M4.2958,4.37486l-4.075,4.075A.75043.75043,0,0,0,1.28141,9.51057l4.07505-4.075A.75043.75043,0,0,0,4.2958,4.37486Z"/></g></g></g></svg>
+        </div>
+    
+        <div id="sections">
+            <h1>Color Palettes</h1>
+            <ul class="not-active">
+                <li>New</li>
+                <li>Trendy</li>
+                <li>Poplar</li>
+                <li>Random</li>
+            </ul>
+        </div>
+    
+        <div id="more">
+            <svg viewBox="0 0 28.57703 7.14426" xmlns="http://www.w3.org/2000/svg"><g><circle class="cls-2" cx="14.28852" cy="3.57213" r="3.57213"/><circle class="cls-2" cx="3.57213" cy="3.57213" r="3.57213"/><circle class="cls-2" cx="25.0049" cy="3.57213" r="3.57213"/></g></svg>
+            <div class="more-options">
+                <ul class="not-active">
+                    <li><a href="Home.html">Palettes</a></li>
+                    <li><a href="Create.html">Create</a></li>
+                    <li><a href="Collection.html">Links</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <aside>
+        <div id="search">
+            <input placeholder="Search Palettes" type="text">
+            <svg viewBox="0 0 17.95362 17.95363" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{ fill:#abbcc6;}</style></defs><g><path class="cls-1" d="M17.84406,16.78626l-5.21541-5.2154a7.12082,7.12082,0,1,0-1.05779,1.05783l5.2154,5.2154a.37411.37411,0,0,0,.529,0l.52883-.52886A.374.374,0,0,0,17.84406,16.78626ZM7.10667,12.71719A5.61052,5.61052,0,1,1,12.7172,7.10667,5.61666,5.61666,0,0,1,7.10667,12.71719Z"/></g></svg>
+        </div>
+    
+        <h1>You like 0 palettes</h1>
+        <div id="liked-color"></div>
+    
+        <p>Get our Chrome extension for color inspiration in every new tab</p>
+        <div class="btn">
+            <svg viewBox="0 0 18.27305 18.27312" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-0{ fill:#f44336} .cls-2{ fill:#ffc107} .cls-3{ fill:#4caf50} .cls-4{ fill:#2196f3} .cls-5{ fill:#fafafa}</style></defs><g><path class="cls-0" d="M17.60306,5.71085H9.13688a3.426,3.426,0,0,0-2.99209,5.101L1.91172,3.54861A9.13081,9.13081,0,0,1,17.60306,5.71085Z"/><path class="cls-2" d="M18.273,9.13691a9.1438,9.1438,0,0,1-9.13616,9.13615,8.14761,8.14761,0,0,1-1.142-.07612l4.11127-7.347a3.43442,3.43442,0,0,0-1.25622-4.68228,3.39413,3.39413,0,0,0-1.70543-.45681H17.603A9.00812,9.00812,0,0,1,18.273,9.13691Z"/><path class="cls-3" d="M12.10613,10.84994l-4.11127,7.347h-.0076A9.13085,9.13085,0,0,1,1.91172,3.54861l4.23307,7.26325.02284.03808a3.42605,3.42605,0,0,0,5.9385,0Z"/><path class="cls-1" d="M12.10613,10.84994a3.42605,3.42605,0,0,1-5.9385,0l-.02284-.03808a3.42609,3.42609,0,0,1,2.99209-5.101h.0076a3.39423,3.39423,0,0,1,1.70543.45681A3.43446,3.43446,0,0,1,12.10613,10.84994Z"/><path class="cls-4" d="M12.10613,10.84994a3.42605,3.42605,0,0,1-5.9385,0l-.02284-.03808a3.42609,3.42609,0,0,1,2.99209-5.101h.0076a3.39423,3.39423,0,0,1,1.70543.45681A3.43446,3.43446,0,0,1,12.10613,10.84994Z"/><path class="cls-5" d="M9.124,12.94365a3.77926,3.77926,0,0,1-1.89043-.50706,3.8099,3.8099,0,1,1,5.203-1.39629h0A3.82808,3.82808,0,0,1,9.124,12.94365Zm.01977-6.85212a3.04689,3.04689,0,1,0,2.632,4.56812h0A3.04538,3.04538,0,0,0,9.14448,6.09157H9.14373Z"/></g></svg>
+            Add to Chrome
+            <a href="https://chrome.google.com/webstore/detail/color-tab/hchlgfaicmddilenlflajnmomalehbom"
+               target="_blank"></a>
+        </div>
+    </aside>
+
+    <main>
+        <div id="color-selected">
+            <div class="color">
+                <span style="background:rgb(226, 225, 225)">
+                    <h1>#fff</h1>
+                </span>
+                <span style="background:rgb(158, 158, 158)">
+                    <h1>#fff000</h1>
+                </span>
+                <span style="background:rgb(124, 124, 124)">
+                    <h1>#fff</h1>
+                </span>
+                <span style="background:rgb(68, 68, 68)">
+                    <h1>#fff</h1>
+                </span>
+            </div>
+            <div class="bottom">
+                <div class="like">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.17936 8.16669"><defs><style>.cls-1{fill:#3a4249;}</style></defs><title>ic_heart</title><g id="Layer_2" data-name="Layer 2"><g id="Home"><path class="cls-1" d="M8.45116.79922A2.4683,2.4683,0,0,0,6.61511,0,2.30927,2.30927,0,0,0,5.17278.49786a2.951,2.951,0,0,0-.5831.60887A2.94936,2.94936,0,0,0,4.00652.49786,2.30894,2.30894,0,0,0,2.56426,0,2.46847,2.46847,0,0,0,.72813.79922,2.86928,2.86928,0,0,0,0,2.75867,3.41661,3.41661,0,0,0,.91043,4.9951a19.41256,19.41256,0,0,0,2.279,2.13909c.31578.26914.67372.5742,1.04539.89915a.53885.53885,0,0,0,.70957.00014c.37166-.325.72981-.63022,1.04573-.8995A19.4039,19.4039,0,0,0,8.269,4.995,3.41623,3.41623,0,0,0,9.17936,2.7586,2.869,2.869,0,0,0,8.45116.79922Z"/></g></g></svg>
+                    <h1>0</h1>
+                </div>
+                <div class="option">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.7766 12.5617"><style>.cls-d{fill:#a9bdd3;}</style><g id="Select"><path class="cls-d" d="M8.99339,5.72578a.39156.39156,0,0,0-.35722-.23H7.066V.39255A.3927.3927,0,0,0,6.67341,0H5.10319a.39269.39269,0,0,0-.39255.39255v5.1032H3.14043a.39236.39236,0,0,0-.2952.65085L5.5931,9.287a.39168.39168,0,0,0,.5904,0L8.93137,6.1466A.39135.39135,0,0,0,8.99339,5.72578Z"/><path class="cls-d" d="M10.20638,8.63617v2.35532H1.57021V8.63617H0V11.7766a.78489.78489,0,0,0,.78511.7851H10.99149a.78439.78439,0,0,0,.78511-.7851V8.63617Z"/></g></svg>
+                    <h1>Image</h1>
+                </div>
+                <div class="option">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.99149 10.99315"><g><g><path class="cls-d" d="M6.70664,4.28486a2.49381,2.49381,0,0,0-.43048-.34622,2.565,2.565,0,0,0-3.19661.34622L.74942,6.61682a2.56474,2.56474,0,0,0,3.62526,3.62891L6.29814,8.32227A.18319.18319,0,0,0,6.16807,8.009H6.0948a3.08311,3.08311,0,0,1-1.17238-.22714.18319.18319,0,0,0-.19967.04029L3.33969,9.20706A1.09973,1.09973,0,0,1,1.78444,7.65181L4.12373,5.31436a1.09913,1.09913,0,0,1,1.55343,0,.75107.75107,0,0,0,1.0295,0,.72561.72561,0,0,0,0-1.0295Z"/><path class="cls-d" d="M10.2403.75119a2.56475,2.56475,0,0,0-3.62709,0L4.69158,2.671a.1839.1839,0,0,0,.13372.31325h.06777a3.07733,3.07733,0,0,1,1.17056.229.18319.18319,0,0,0,.19967-.04029L7.64269,1.79536A1.09973,1.09973,0,0,1,9.198,3.35061L7.47965,5.06706,7.465,5.08355l-.60085.59719a1.09911,1.09911,0,0,1-1.55342,0,.75107.75107,0,0,0-1.0295,0,.73035.73035,0,0,0,0,1.03317,2.54288,2.54288,0,0,0,.73273.51292c.03847.01831.07694.033.11541.04946s.07876.0293.11723.044.07877.02748.11724.03847l.10808.0293c.07327.01831.14656.033.22165.04579a2.54962,2.54962,0,0,0,.273.02565h.13921l.10991-.01281c.0403-.00183.08244-.011.13007-.011H6.408l.1264-.01831.05862-.011.10624-.022h.02016a2.56426,2.56426,0,0,0,1.18887-.67413l2.332-2.33195A2.56469,2.56469,0,0,0,10.2403.75119Z"/></g></g></svg>
+                    <h1>link</h1>
+                </div>
+                <ul>
+                    <li>#red</li>
+                    <li>#blue</li>
+                    <li>#white</li>
+                    <li>#yellow</li>
+                    <li>#brown</li>
+                </ul>
+                <div class="time">...</div>
+            </div>
+        </div>
+
+        <div id="more-color"></div>
+    </main>
+
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/select.js"></script>
+
+</body>
+</html>

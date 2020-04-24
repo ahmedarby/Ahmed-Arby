@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Color Hunt</title>
+    <link href="./res/Logo.svg" rel="shortcut icon" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./css/style.base.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+        }
+
+        main {
+            display: block;
+            max-width: 750px;
+            margin: 100px auto;
+        }
+
+        main img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+
+        main h2 {
+            display: block;
+            color: #46585b;
+            font-size: 25px;
+            font-weight: lighter;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        main .content {
+            width: 100%;
+            margin-top: 150px;
+        }
+
+        main .content h1 {
+            color: #46585b;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+
+        main .content h1:not(:first-of-type) {
+            margin-top: 50px;
+        }
+
+        main .content p {
+            color: #46585b;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="Home.html">
+            <img alt="Color Hunt Logo" src="./res/Logo.svg">
+            <h1>Color Hunt</h1>
+        </a>
+
+        <div id="page-name">About</div>
+
+        <div id="more">
+            <svg viewBox="0 0 28.57703 7.14426" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <circle class="cls-2" cx="14.28852" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="3.57213" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="25.0049" cy="3.57213" r="3.57213" />
+                </g>
+            </svg>
+            <div class="more-options">
+                <ul class="not-active">
+                    <li><a href="Home.html">Palettes</a></li>
+                    <li><a href="Create.html">Create</a></li>
+                    <li><a href="Collection.html">Links</a></li>
+                    <li><a href="About.html" style="color: #a5a5a5;">About</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <img src="./res/logo-gif.gif" alt="Logo">
+        <h2>About Color Hunt</h2>
+        <div class="content">
+            <h1>What is Color Hunt?</h1>
+            <p>Color Hunt is an open collection of color palettes, created by Gal Shir. Color Hunt started as a personal
+                small project built to share trendy color combinations between a group of designer friends. The
+                collection scaled up and now being used daily as a handy resources by thousands of people all over the
+                world. Color Hunt was created with the goal of celebrating the beauty of colors, and to serve as a go-to
+                resource for color inspiration.</p>
+            <h1>Who is it for?</h1>
+            <p>Color Hunt serves thousands of color schemes for many different design and art purposes. The color
+                palettes are being used by graphic designers, artists, illustrators, web developers, fashion designers,
+                marketeers, interior designers, and more. People use Color Hunt to get color inspiration and find the
+                perfect palette for their projects. Anyone can save their favorite palettes, manage their personal
+                collection, and have a quick access to copy the color codes. </p>
+            <h1>Who creates the color palettes?</h1>
+            <p>You, the users, are the ones who create the palettes using Color Hunt’s palette creator. The collection
+                is open, and everyone can create and submit their own color combination. That’s how we keep Color Hunt
+                diverse, colorful, social and inspiring. Each palette is a public property and not owned by a specific
+                creator, nor by Color Hunt. </p>
+            <h1>I created a palette, why doesn’t it show up on Color Hunt’s homepage?</h1>
+            <p>Color Hunt is open, but is also curated. It means that all the palettes are hand-picked by Color Hunt’s
+                curators. Each submission of a color palette is being reviewed to make sure it fits the collection’s
+                goals. Each day, the very best submission is being picked up and will be visible on the homepage in the
+                day after. </p>
+            <h1>How does the Likes system work?</h1>
+            <p> Color Hunt is open, but is also curated. It means that all the palettes are hand-picked by Color Hunt’s
+                curators. Each submission of a color palette is being reviewed to make sure it fits the collection’s
+                goals. Each day, the very best submission is being picked up and will be visible on the homepage in the
+                day after. </p>
+        </div>
+    </main>
+
+    <script>
+        const more = document.querySelector('nav #more svg');
+        more.addEventListener('click', () => {
+            document.querySelector('nav #more .more-options ul').classList.toggle('not-active');
+        });
+    </script>
+
+</body>
+
+</html>

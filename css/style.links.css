@@ -1,0 +1,69 @@
+main {
+    width: 100%;
+    padding: 100px 20px 0 20px;
+}
+
+main h1,
+main p {
+    display: block;
+    color: #3a3a3a;
+    font-weight: lighter;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+main p {
+    font-size: 17px;
+    margin: 30px auto;
+}
+
+main .my-likes {
+    display: flex;
+    max-width: 1020px;
+    margin: 50px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .my-likes .item {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+
+main .my-likes .item span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 41%;
+}
+
+main .my-likes .item span:nth-of-type(2) {
+    height: 26%;
+}
+
+main .my-likes .item span:nth-of-type(3) {
+    height: 18%;
+}
+
+main .my-likes .item span:nth-of-type(4) {
+    height: 15%;
+}
+
+main .my-likes .item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Hunt | Create Palettes</title>
+    <link href="./res/Logo.svg" rel="shortcut icon" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./css/style.base.css" rel="stylesheet">
+
+    <style>
+        main {
+            width: 100%;
+            height: 100vh;
+            padding-top: 100px;
+        }
+
+        main h1 {
+            display: block;
+            color: #3a3a3a;
+            font-size: 25px;
+            font-weight: lighter;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        #color {
+            display: block;
+            width: 450px;
+            height: 450px;
+            margin: 30px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #color span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 41%;
+            background: #bfc1bf;
+            cursor: pointer;
+        }
+
+        #color span:nth-of-type(2) {
+            height: 26%;
+            background: #969696;
+        }
+
+        #color span:nth-of-type(3) {
+            height: 18%;
+            background: #7c7c7c
+        }
+
+        #color span:nth-of-type(4) {
+            height: 15%;
+            background: #676868;
+        }
+
+        #color input[type="color"] {
+            display: none;
+            background: #bfc1bf;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            opacity: 0;
+        }
+
+        .btn {
+            width: max-content;
+            height: max-content;
+            border: 1px solid #d6d8d6;
+            margin: 30px auto;
+            font-size: 20px;
+            padding: 7px 20px 7px 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #7c7c7c;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="Home.html">
+            <img alt="Color Hunt Logo" src="./res/Logo.svg">
+            <h1>Color Hunt</h1>
+        </a>
+
+        <div id="page-name">Create Palettes</div>
+
+        <div id="more">
+            <svg viewBox="0 0 28.57703 7.14426" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <circle class="cls-2" cx="14.28852" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="3.57213" cy="3.57213" r="3.57213" />
+                    <circle class="cls-2" cx="25.0049" cy="3.57213" r="3.57213" />
+                </g>
+            </svg>
+            <div class="more-options">
+                <ul class="not-active">
+                    <li><a href="Home.html">Palettes</a></li>
+                    <li><a href="Create.html" style="color: #a5a5a5;">Create</a></li>
+                    <li><a href="Collection.html">Links</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>Create a Color Palette!</h1>
+        <div id="color">
+            <span></span>
+            <input type="color">
+            <span></span>
+            <input type="color">
+            <span></span>
+            <input type="color">
+            <span></span>
+            <input type="color">
+        </div>
+
+        <div class="btn">Done</div>
+
+    </main>
+
+    <script>
+
+        const more = document.querySelector('nav #more svg'),
+            span1 = document.querySelector('#color span:nth-of-type(1)'),
+            input1 = document.querySelector('#color input[type="color"]:nth-of-type(1)'),
+            span2 = document.querySelector('#color span:nth-of-type(2)'),
+            input2 = document.querySelector('#color input[type="color"]:nth-of-type(2)'),
+            span3 = document.querySelector('#color span:nth-of-type(3)'),
+            input3 = document.querySelector('#color input[type="color"]:nth-of-type(3)'),
+            span4 = document.querySelector('#color span:nth-of-type(4)'),
+            input4 = document.querySelector('#color input[type="color"]:nth-of-type(4)'),
+            btn = document.querySelector('.btn');
+
+        more.addEventListener('click', () => {
+            document.querySelector('nav #more .more-options ul').classList.toggle('not-active');
+        });
+
+        span1.addEventListener('click', () => input1.click());
+        input1.addEventListener('input', () => span1.style.background = input1.value);
+
+        span2.addEventListener('click', () => input2.click());
+        input2.addEventListener('input', () => span2.style.background = input2.value);
+
+        span3.addEventListener('click', () => input3.click());
+        input3.addEventListener('input', () => span3.style.background = input3.value);
+
+        span4.addEventListener('click', () => input4.click());
+        input4.addEventListener('input', () => span4.style.background = input4.value);
+
+        btn.addEventListener('click', () => window.open('Home.html', '_self'));
+
+    </script>
+
+</body>
+
+</html>
